@@ -1,7 +1,10 @@
-valor1 = int(input("Digite um valor qualquer: ")) 
-valor2 = int(input("Digite um valor qualquer: ")) 
-valor3 = int(input("Digite um valor qualquer: "))
+valorPao = 0,38 
+valorBroa = 4,50
 
-numeros = [valor1, valor2, valor3]
+qtPaoDia = int(input('Quantos pães francesses são vendidos no dia: '))
+qtBroaDia = int(input('Quantas broa são vendidas em um dia :'))
+somaVendas = qtPaoDia + qtBroaDia
+print(f"O valor total vendido em um dia foi de {somaVendas}")
 
-print("Números na ordem inversa: ", numeros[::-1])
+reserva = somaVendas * 0.10
+print(f"Ele precisa reservar {reserva} do valor das vendas! ")
